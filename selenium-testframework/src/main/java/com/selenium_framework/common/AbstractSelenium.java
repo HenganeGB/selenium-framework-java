@@ -11,14 +11,16 @@ import java.net.URLDecoder;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 
+  @Listeners(FrameworkListeners.class)
 public class AbstractSelenium    
 {
-	@BeforeTest
+	/*@BeforeTest
 	public void callCreateWebdriverInstanceMethod() //use to call above method
 	{
 		WebDriverFactory.createWebDriverInstance();  //this method helps to create object 
-	}
+	}*/
 	
 	@DataProvider(name="LoginData")
 	public String[][] getLoginData() 

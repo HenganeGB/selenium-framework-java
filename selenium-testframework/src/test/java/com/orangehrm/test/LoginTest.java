@@ -25,7 +25,7 @@ public class LoginTest extends AbstractSelenium
 
 	
 	
-	@Test(dataProvider="ExcelData")   // duplicate method
+	/*@Test(dataProvider="ExcelData")   // duplicate method
 	public void verifyAdminLoginSuccessful123(String strUserName, String strPwd)
 	{
 		
@@ -37,6 +37,6 @@ public class LoginTest extends AbstractSelenium
 				//.verifyAdminLink();     //this called Object Chain
 		
 				
-		}
+		}*/
 
 }
