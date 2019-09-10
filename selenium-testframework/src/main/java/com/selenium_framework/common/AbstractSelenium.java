@@ -22,8 +22,17 @@ public class AbstractSelenium
 		WebDriverFactory.createWebDriverInstance();  //this method helps to create object 
 	}*/
 	
-	@DataProvider(name="LoginData")
+	@DataProvider(name="LoginData", parallel= true)
 	public String[][] getLoginData() 
+	{
+		String myData[][]= {{"admin","admin"},{"Amit","amit"},{"Swanil","Swapnil"}};
+		
+		return myData;
+	}
+	
+	
+	@DataProvider(name="LoginData1", parallel= true)
+	public String[][] getLoginData(Method m) 
 	{
 		String myData[][]= {{"admin","admin"},{"Amit","amit"},{"Swanil","Swapnil"}};
 		
@@ -62,7 +71,7 @@ public class AbstractSelenium
 public String[][] getCSVData()
 {
 	File file= new File("C:\\Users\\Gajanan\\Desktop\\LoginData.txt");
-	String[] [] myData= new String[3][2];
+	String[] [] myData= new String[3][2];// creating object of array, defining size coz we are using this object later(not initilizing)
 	
 	try
 	{	

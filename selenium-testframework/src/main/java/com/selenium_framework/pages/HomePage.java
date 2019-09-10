@@ -22,7 +22,7 @@ public class HomePage {
 	{
 		System.out.println(welComeText.isDisplayed()); // isDisplayed returns true/false here it return true
 		Assert.assertEquals(welComeText.isDisplayed(), true);
-		Assert.assertEquals(welComeText.getText(), "WelCome Admin");
+		Assert.assertEquals(welComeText.getText(), "Welcome Admin");
 
 		return this;
 	}
